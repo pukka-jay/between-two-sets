@@ -18,8 +18,8 @@ import sys
 def getTotalX(a, b):
     # Write your code here
     
-    ###first generate all numbers between the end of the last list and the first of the next list. Then generate all integers between them and check if 
-    the number if all numbes in list a are divisible by it and then also for list b.
+    ''' first generate all numbers between the end of the last list and the first of the next list. Then generate all integers between them and check if 
+    the number if all numbes in list a are divisible by it and then also for list b '''
     ar = [i for i in range(max(a), min(b)+ 1) if all(i%j==0 for j in a)]
 
     br = [i for i in ar if all(j%i==0 for j in b)]
